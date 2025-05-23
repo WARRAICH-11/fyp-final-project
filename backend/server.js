@@ -79,6 +79,8 @@ app.use('/api/users', require('./routes/users'));
 app.use('/api/sessions', require('./routes/sessions'));
 app.use('/api/messages', require('./routes/messageRoutes'));
 app.use('/api/assessments', require('./routes/assessments'));
+app.use('/api/career', require('./routes/career'));
+app.use('/api/careers', require('./routes/careerRoutes'));
 
 // Serve static files from files directory
 app.use('/files', express.static(path.join(__dirname, 'files')));
